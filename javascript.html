@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 20px;
+			padding: 20px;
+			display: flex;
+			background-color: aliceblue;
+			transition: .3s;
+			color: black;
+			justify-content: center;
+		}
+
+		input[type="checkbox"]{
+			position: relative;
+			width: 40px;
+			height: 20px;
+			appearance: none;
+			background-color: rgb(71, 70, 70);
+			border-radius: 15px;
+			transition: .5s ease;
+			cursor: pointer;
+		}
+
+		input[type="checkbox"]:checked{
+			background-color: blue;
+		}
+
+		input[type="checkbox"]::before{
+			content:'';
+			position: absolute;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			background-color: #fff;
+			top: 2px;
+			left: 2px;
+			transition: .5s ease;
+		}
+
+		input[type="checkbox"]:checked::before{
+			transform: translateX(20px);
+		}
+
+		.dark{
+			background-color: black;
+			color: #fff;
+			box-shadow: white;
+		}
+
+		.LOREM{
+			max-width: 500px;
+		}
+
+		.image{
+			text-align: center;
+			box-shadow: 1px 1px 2px 2px black;
+			border: solid 1px white;
+			padding: 1px 1px 1px 1px;
+			overflow: hidden;
+			border-radius: 20px;
+			margin: 20px 20px;
+		}
+
+		img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Dark mode test</h1>
+		<p>click for try</p>
+		<input type="checkbox" onclick="ubah()">
+		<P class="LOREM">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur corporis atque, doloribus dicta repellat vero placeat officiis quis ullam ut obcaecati quisquam asperiores, sapiente ratione quae doloremque animi? Dolores, sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat dicta vero blanditiis, dolor earum ipsa iusto perspiciatis aliquam, delectus neque. Tenetur repudiandae fugit consectetur aliquam nesciunt est adipisci maxime, ut sapiente? Nesciunt inventore est quaerat distinctio sed obcaecati mollitia vitae non nisi accusamus recusandae voluptas odio debitis eaque doloremque ex quas sint repellat adipisci eligendi assumenda corporis, dolore nostrum. Atque accusantium eum at ex repellendus praesentium magnam saepe nihil, aut reprehenderit dolor deleniti sequi quisquam fuga optio tenetur cumque, itaque consequuntur quos delectus natus quas laudantium. Enim, magni assumenda!</P>
+
+		<div class="image">
+			<img src="w8elAV0qwPeHVx5Z0Xl2VJTEbst1489735146585_200x200.png" alt="8">
+			<h1>Travelio</h1>
+		</div>
+	</div>
+
+<script src="js.js"></script>
+</body>
+</html>
